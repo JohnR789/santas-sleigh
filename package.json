@@ -1,0 +1,12 @@
+{
+  "name": "santas-sleigh",
+  "version": "1.0.0",
+  "description": "A festive Secret Santa app with features like background Spotify music, wish list creation, and real-time chat.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
