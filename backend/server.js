@@ -1,21 +1,23 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const spotifyRoutes = require('./routes/spotifyRoutes');
 
+// Load environment variables from .env file
 dotenv.config();
 
+// Initialize Express
 const app = express();
 
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// Use Spotify API routes
+app.use('/api/spotify', spotifyRoutes);
 
-app.use(express.json());
-
+// Root route for testing
 app.get('/', (req, res) => {
-  res.send('Santa\'s Sleigh API');
+  res.send('Welcome to Spotify Integration');
 });
 
+// Start the server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
