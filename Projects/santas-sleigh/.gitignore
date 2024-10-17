@@ -1,0 +1,29 @@
+# Node modules directory
+node_modules/
+
+# Environment variables file
+.env
+
+# Build directories
+dist/
+build/
+
+# Log files
+*.log
+
+# Operating system specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# VS Code settings
+.vscode/
+
+# Ignore Webpack output
+*.bundle.js
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore cache directories
+.cache/

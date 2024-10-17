@@ -1,0 +1,169 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    color: white;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Form section styling */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+label, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.8rem;
+    border: none;
+    background-color: #88d3ce;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6e45e2;
+}
+
+/* Drink result styling */
+#drink-result {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#drink-result.show {
+    transform: scale(1.05);
+}
+
+#drink-result.hide {
+    transform: scale(1);
+}
+
+/* Drink content styling */
+#drink-content {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#drink-content img {
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+#drink-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#drink-content p, #drink-content ul {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#drink-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#drink-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/* screen shake effect */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.shake {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}

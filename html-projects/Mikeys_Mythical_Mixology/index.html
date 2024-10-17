@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mikey's Mythical Mixology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+
+    <header>
+        <h1>Mikey's Mythical Mixology</h1>
+        <p>Your personal cocktail advisor to find the perfect drink.</p>
+    </header>
+
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Find Your Drink</h2>
+            <form id="drink-form">
+                <label for="flavor">Choose a Flavor:</label>
+                <select id="flavor" required>
+                    <option value="">Select flavor</option>
+                    <option value="sweet">Sweet</option>
+                    <option value="bitter">Bitter</option>
+                    <option value="sour">Sour</option>
+                    <option value="spicy">Spicy</option>
+                    <option value="fruity">Fruity</option>
+                    <option value="citrusy">Citrusy</option>
+                    <option value="herbal">Herbal</option>
+                    <option value="smoky">Smoky</option>
+                    <option value="savory">Savory</option>
+                    <option value="tropical">Tropical</option>
+                </select>
+
+                <label for="alcohol">Choose an Alcohol Type:</label>
+                <select id="alcohol" required>
+                    <option value="">Select alcohol</option>
+                    <option value="vodka">Vodka</option>
+                    <option value="rum">Rum</option>
+                    <option value="whiskey">Whiskey</option>
+                    <option value="tequila">Tequila</option>
+                    <option value="gin">Gin</option>
+                    <option value="brandy">Brandy</option>
+                    <option value="bourbon">Bourbon</option>
+                    <option value="scotch">Scotch</option>
+                    <option value="cognac">Cognac</option>
+                    <option value="mezcal">Mezcal</option>
+                    <option value="sake">Sake</option>
+                    <option value="liqueur">Liqueur</option>
+                    <option value="beer">Beer</option>
+                    <option value="champagne">Champagne</option>
+                    <option value="absinthe">Absinthe</option>
+                    <option value="amaro">Amaro</option>
+                    <option value="vermouth">Vermouth</option>
+                    <option value="cider">Cider</option>
+                    <option value="wine">Wine</option>
+                </select>
+
+                <label for="mixer">Choose a Mixer:</label>
+                <select id="mixer" required>
+                    <option value="">Select mixer</option>
+                    <option value="soda">Soda</option>
+                    <option value="tonic">Tonic</option>
+                    <option value="club soda">Club Soda</option>
+                    <option value="juice">Juice</option>
+                    <option value="orange juice">Orange Juice</option>
+                    <option value="cranberry juice">Cranberry Juice</option>
+                    <option value="pineapple juice">Pineapple Juice</option>
+                    <option value="lemonade">Lemonade</option>
+                    <option value="lime juice">Lime Juice</option>
+                    <option value="grenadine">Grenadine</option>
+                    <option value="ginger beer">Ginger Beer</option>
+                    <option value="ginger ale">Ginger Ale</option>
+                    <option value="cola">Cola</option>
+                    <option value="energy drink">Energy Drink</option>
+                    <option value="cream">Cream</option>
+                    <option value="milk">Milk</option>
+                    <option value="coconut water">Coconut Water</option>
+                    <option value="coconut cream">Coconut Cream</option>
+                    <option value="tea">Tea</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="simple syrup">Simple Syrup</option>
+                    <option value="honey">Honey</option>
+                    <option value="maple syrup">Maple Syrup</option>
+                    <option value="bitters">Bitters</option>
+                    <option value="mint">Mint</option>
+                    <option value="basil">Basil</option>
+                    <option value="egg white">Egg White</option>
+                </select>
+
+                <button type="button" onclick="generateDrink()">Generate Drink</button>
+                <button type="button" onclick="randomDrink()">Random Drink</button>
+            </form>
+
+            <div id="drink-result"></div>
+        </div>
+    </section>
+
+    <section id="drink-section">
+        <div id="drink-content"></div> 
+    </section>
+
+    <footer>
+        <p>© 2024 Mikey's Mythical Mixology. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
